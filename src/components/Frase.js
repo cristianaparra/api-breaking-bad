@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from '@emotion/styled'
 
 const ContenedorFrase = styled.div`
@@ -19,7 +19,7 @@ padding-left: 4rem;
 
 &::before {
     content: open-quote;
-    font-size: 10rem:
+    font-size: 10rem;
     color: black;
     position: absolute;
     left: -1rem;
@@ -28,18 +28,24 @@ padding-left: 4rem;
 }
 
 p{
-
+    font-family: Verdan, Geneva, Tahoma, sans-serif;
+    color:#666;
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.4rem;
+    maregin-top: 2rem;
 }
 `;
 
 const Frase = ({ frase }) => {
+    // if(Object.keys(frase))
     return (
         <ContenedorFrase>
             <h1>
                 {frase.quote}
             </h1>
             <p>
-                {frase.author}
+                -{frase.author}
             </p>
         </ContenedorFrase>
     );
