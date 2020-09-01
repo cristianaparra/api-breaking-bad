@@ -38,14 +38,14 @@ p{
 `;
 
 const Frase = ({ frase }) => {
-    // if(Object.keys(frase))
+  
     return (
         <ContenedorFrase>
             <h1>
                 {frase.quote}
             </h1>
             <p>
-                -{frase.author}
+                {frase.author}
             </p>
         </ContenedorFrase>
     );
